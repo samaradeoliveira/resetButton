@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8" />
+  <link rel="shortcut icon" href="BANDEIRINHA.png" type="image/x-png">
+  <title>Corrida de Carros</title>
+  <!-- Lib -->
+  <script src="./lib/p5.min.js"></script>
+  <script src="./lib/p5.dom.min.js"></script>
+  <script src="./lib/p5.sound.min.js"></script>
+  <script src="./lib/p5.play.js"></script>
+
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Firebase -->
+  <script src="https://www.gstatic.com/firebasejs/8.3.2/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.3.2/firebase-database.js"></script>
+
+  <script>
+    //dados do banco
+    const firebaseConfig = {
+      apiKey: "AIzaSyDynMUc8RzOhXJX7RxWikvaNN2KKp8BZTw",
+      authDomain: "carrosgrupo1302.firebaseapp.com",
+      databaseURL: "https://carrosgrupo1302-default-rtdb.firebaseio.com",
+      projectId: "carrosgrupo1302",
+      storageBucket: "carrosgrupo1302.appspot.com",
+      messagingSenderId: "23396514932",
+      appId: "1:23396514932:web:5ad25e782ee336809e2521"
+    };
+
+
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+  </script>
+</head>
+
+<body>
+  <script src="./js/Game.js"></script>
+  <script src="./js/Form.js"></script>
+  <script src="./js/Player.js"></script>
+  <script src="./sketch.js"></script>
+
+</body>
+
+</html>
